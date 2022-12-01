@@ -20,10 +20,10 @@ def parse(filename):
 
 
 
-def solution(elphs, top=1):
-    return sum(sorted([sum(x) for x in elphs], reverse=True)[:top])
+def solution(elves, top=1):
+    return sum(sorted([sum(x) for x in elves], reverse=True)[:top])
 
 if __name__ == '__main__':
-    elphs = parse('input')
-    print(f'The solution to part 1 is: {solution(elphs)}')
-    print(f'The solution to part 2 is: {solution(elphs, 3)}')
+    elves = parse('input')
+    print(f'The solution to part 1 is: {solution(elves)}')
+    print(f'The solution to part 2 is: {solution(elves, 3)}')
